@@ -1,5 +1,136 @@
 # TSender UI - Token Airdrop Interface
 
+A modern web interface for performing ERC-20 token airdrops efficiently and securely, built with Next.js, TypeScript and Web3 technologies.
+
+## Summary
+
+TSender UI is a decentralized application (dApp) that allows users to perform ERC-20 token airdrops to multiple recipients simultaneously. The interface offers an intuitive experience for connecting wallets, approving tokens and executing mass distributions, significantly reducing time and transaction costs compared to individual transfers.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- MetaMask or other compatible Web3 wallet
+- ERC-20 tokens to perform the airdrop
+
+### Installation and Setup
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd ts-tsender-ui
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+### How to Use
+
+1. **Connect your wallet** using the header button
+2. **Enter the token address** of the ERC-20 you want to distribute
+3. **List recipients** (separated by comma or new line)
+4. **Set amounts** for each recipient
+5. **Confirm transaction** and wait for execution
+
+## Description
+
+### Technologies Used
+
+- **Frontend**: Next.js 14, React, TypeScript
+- **Styling**: Tailwind CSS
+- **Web3 Integration**: Wagmi, RainbowKit
+- **Blockchain**: Ethereum, Smart Contracts (Solidity)
+- **Testing**: Vitest
+- **Development**: ESLint, TypeScript
+
+### Key Features
+
+#### 🎯 **Intuitive Interface**
+- Responsive and modern design with Tailwind CSS
+- Reusable and typed components with TypeScript
+- Real-time visual feedback for transactions
+
+#### 🔗 **Web3 Integration**
+- Multiple wallet connection via RainbowKit
+- Support for different Ethereum networks
+- Automatic balance and approval verification
+
+#### 💰 **Token Management**
+- Automatic token information detection (name, decimals, balance)
+- Sufficient balance verification before execution
+- Smart approval system to optimize gas
+
+#### 📊 **Advanced Features**
+- Automatic calculation of total to be distributed
+- Local persistence of form data
+- Loading states with visual feedback
+- Address and value validation
+
+### Project Architecture
+
+```
+src/
+├── app/                 # Next.js App Router
+├── components/          # Reusable React components
+│   ├── ui/             # Base interface components
+│   ├── AirdropForm.tsx # Main form
+│   ├── Header.tsx      # Header with connection
+│   └── ...
+├── utils/              # Utility functions
+│   └── calculateTotal/ # Calculation logic with tests
+└── constants.ts        # Configurations and ABIs
+```
+
+### Smart Contracts
+
+The project interacts with custom smart contracts for:
+- **TSender Contract**: Executes optimized batch airdrops
+- **ERC-20 Tokens**: Standard for fungible tokens
+- **Approval System**: Secure permission management
+
+## Conclusion
+
+TSender UI represents a complete and modern solution for ERC-20 token distribution, demonstrating effective integration between traditional frontend development and emerging blockchain technologies.
+
+### Main Achievements
+
+✅ **User Experience**: Intuitive interface that abstracts blockchain complexity  
+✅ **Efficiency**: Significant reduction in costs and time for airdrops  
+✅ **Security**: Robust validations and secure approval management  
+✅ **Code Quality**: TypeScript, automated tests and modular architecture  
+
+### Next Steps
+
+- [ ] Support for NFT tokens (ERC-721/ERC-1155)
+- [ ] Multi-network integration (Polygon, BSC, etc.)
+- [ ] Scheduling system for airdrops
+- [ ] Dashboard with transaction history
+- [ ] Advanced gas optimizations
+
+This project demonstrates proficiency in modern Web3 technologies and serves as a solid foundation for more complex decentralized applications in the DeFi ecosystem.
+
+---
+
+**Main Stack**: Next.js | TypeScript | Tailwind CSS | Wagmi | RainbowKit | Solidity | Ethereum
+
 Uma interface web moderna para realizar airdrops de tokens ERC-20 de forma eficiente e segura, construída com Next.js, TypeScript e Web3 technologies.
 
 ## Resumo
