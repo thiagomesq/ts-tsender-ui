@@ -14,9 +14,8 @@ export default function Header() {
           <FaGithub size={24} />
         </a>
         <h1 className="text-2xl font-bold text-gray-800">tsender</h1>
-        <h2 className="text-md text-gray-400 italic">The most gas efficient airdrop contract on earth</h2>
       </div>
-      
+      <h2 className="text-md text-gray-400 italic">The most gas efficient airdrop contract on earth</h2>
       <ConnectButton />
     </header>
   );
