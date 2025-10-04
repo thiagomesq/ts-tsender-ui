@@ -3,7 +3,7 @@
 import InputField from "@/components/ui/InputField";
 import { useEffect, useMemo, useState } from "react";
 import { chainsToTSender, tsenderAbi, erc20Abi } from "@/constants";
-import { useChainId, useConfig, useAccount, useWriteContract, useReadContracts, useToken } from "wagmi";
+import { useChainId, useConfig, useAccount, useWriteContract, useReadContracts } from "wagmi";
 import { readContract, waitForTransactionReceipt } from "@wagmi/core";
 import { calculateTotal } from "@/utils";
 import TransactionDetails from "./TransactionDetails";
